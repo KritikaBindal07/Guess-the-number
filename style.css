@@ -1,0 +1,37 @@
+body{
+    background: url("https://img.freepik.com/free-vector/space-background-with-landscape-alien-planet_107791-1125.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color:brown;
+    font-size: xx-large;
+    
+    margin-top: 180px;
+    text-align: center;
+    margin-left: 1opx;
+    
+}
+
+#btn{
+    width: 80px;
+    margin:0;
+    position: absolute;
+    left: 47%;
+    background-color: burlywood;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+   
+}
+
+
+
+p{
+    text-align: center;
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
+}
