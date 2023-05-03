@@ -20,45 +20,91 @@
         <p id="para2"></p>
         <p id="para3"> </p>
 
+        
+
+       
+
 
     
 
     <script>
+        
 
         function start(){
             a= prompt("Enter a number between 1 to 100")
             if(a<=100 && a>0){
                 for(let i=0; i<5; i++){
 
-                    let b= Math.floor(Math.random()*100 +1)
+                    //let b= Math.floor(Math.random()*100 +1)
 
-                    document.getElementById("para").innerHTML +=( "Computer guessed " + b + "<br>") 
+                    function repeat(){
+
+                        let b= Math.floor(Math.random()*100 +1)
+                        document.getElementById("para").innerHTML +=( "Computer guessed " + b + "<br>") 
+
+                        function win(){
+                            if(b==a){
+                            document.getElementById("para2").innerHTML ="Computer wins"
+
+                            console.log(b)
+                            }
+
+                            else{
+                            document.getElementById("para2").innerHTML ="You win"
+
+                            console.log(b)
+                            console.log(a)
+
+
+
+                            }
+
+                        }
+
+                        setTimeout(win,11000) 
+
+
+                    }
+
+                    let stop = setInterval(repeat,2000)
+
+                    setTimeout(stop_interval,10000)
+
+                    setTimeout(win)
+
+                    function stop_interval() {
+                        clearInterval(stop)
+                    }
+
+
+
+
 
                     console.log(b)
                     
 
                     
 
-                    if(b==a){
-                         document.getElementById("para2").innerHTML ="Computer wins"
+                    // if(b==a){
+                    //      document.getElementById("para2").innerHTML ="Computer wins"
 
-                         console.log(b)
+                    //      console.log(b)
 
                          
 
-                        break;
+                    //     break;
                             
-                    }
+                    // }
 
-                    else{
-                        document.getElementById("para2").innerHTML ="You win"
+                    // else{
+                    //     document.getElementById("para2").innerHTML ="You win"
 
-                        console.log(b)
-                        console.log(a)
+                    //     console.log(b)
+                    //     console.log(a)
 
 
 
-                    }
+                    // }
                     
                         
                 }
@@ -71,6 +117,10 @@
                 alert("Error: Invalid Input, Please enter a number between 1 to 100")
             }
         }
+
+       
+
+
 
                     
                     
