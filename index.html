@@ -22,11 +22,16 @@
 
     <script>
         function start(){
+
+            document.getElementById("para").innerHTML= " "
+            document.getElementById("para1").innerHTML=" "
+
             a= prompt("Enter a number between 1 to 100")
 
             let attempt=0
             if(a<=100 && a>0){
                 function repeat(){
+
 
                     attempt++
                     let b= Math.floor(Math.random()*100+1)
