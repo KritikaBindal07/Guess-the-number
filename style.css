@@ -1,7 +1,8 @@
 body{
-    background: url("https://img.freepik.com/free-vector/space-background-with-landscape-alien-planet_107791-1125.jpg");
+    /* background: url("https://img.freepik.com/free-vector/space-background-with-landscape-alien-planet_107791-1125.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: black;
 }
 
 h1{
@@ -31,7 +32,11 @@ h1{
 
 p{
     text-align: center;
-    color: brown;
+    color:white;
     font-size: larger;
     font-weight: bold;
+    
+    
+    padding: 10px;
+    background-color: black;
 }
